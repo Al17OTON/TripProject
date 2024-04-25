@@ -1,0 +1,103 @@
+
+/* main section  */
+#mainCover {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease; /* 호버 효과에 사용될 transition 속성 */
+}
+
+#mainCover:hover .image-container img {
+  transform: scale(1.15); /* 호버 시 이미지 크기를 1.1배로 확대 */
+}
+
+.mainText {
+	 font-size: 3.25rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* 이미지 위로 텍스트를 배치하기 위해 z-index 설정 */
+}
+
+.page-section{
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.sectionH2{
+  margin-bottom: 2rem; 
+  font-weight: 600;
+  line-height: 1.25; 
+  font-size: 48px;
+  margin: 0;
+}
+.pageMoveBtn{
+  border-radius: 9999px;
+  --tw-border-opacity: 1;
+  border: 1px solid rgb(194 194 194 / 1);
+  padding: 0.5rem 1.25rem;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+  display: none; 
+  margin-bottom: 1rem; 
+}
+
+@media (min-width: 1024px) { 
+  .pageMoveBtn{
+    display: inline-block;
+  }
+}
+@media(min-width:992px){
+
+.container{
+  max-width: 960px;
+}
+
+.mainCover{
+  padding-top: 17rem;
+  padding-bottom: 12.5rem;
+}
+.mainCover .mainText{
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 4rem;
+}
+}
+
+@media (min-width: 768px) { 
+  .sectionH2{
+    font-size: 2.25rem; 
+    line-height: 2.5rem; 
+  }
+  
+} 
+
+.list-group-item.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}

@@ -1,0 +1,136 @@
+/*Search.html에서 사용할 CSS*/
+
+#search-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+}
+
+#searchBtn {
+    width: 50px;
+}
+
+.form-select {
+    margin: 10px;
+    width: 300px;
+}
+
+.map-view {
+    display: flex;
+    
+    width: 85%;
+    margin:auto;
+}
+
+
+#bottom {
+    margin-top: 100px;
+    background-color: aquamarine;
+    padding-top: 60px;
+    padding-right: 20px;
+    justify-content: space-around;
+}
+
+#bottom-footer {
+    display: flex;
+    justify-content: right;
+
+}
+
+#up {
+    font: bold;
+    float: left; 
+    padding-left: 60px;
+}
+
+#bodyTag {
+    background-color: #fffff3
+}
+
+#place-write {
+    margin: 40px;
+    margin-left: 100px;
+    width: 40%;
+}
+
+#hotplace {
+    display: flex;
+    flex-direction: column;
+}
+
+.Input {
+    margin: 5px;
+}
+
+#hotplaceBtn {
+    margin: 5px;
+    width: 100px;
+    align-self: flex-end;
+}
+
+
+
+/*카카오맵 스크롤바*/
+.bg_white {
+    padding: 0 0.5em;
+    max-width: auto;
+    height: auto;
+    overflow: auto;
+}
+.bg_white::-webkit-scrollbar {
+    width: 10px;
+}
+.bg_white::-webkit-scrollbar-track { 
+    background-color: gray;
+}
+.bg_white::-webkit-scrollbar-thumb { 
+    background-color: skyblue;
+}
+.bg_white::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* hover 효과 */
+.bg_white::-webkit-scrollbar-thumb:hover {
+    background-color: steelblue;
+    transition: all 0.2s; /* 작동 안 됨 */
+}
+
+/* 코너에 라운드 효과 */
+.bg_white::-webkit-scrollbar-track,
+.bg_white::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+/*modal css*/
+#modalOpenButton, #modalCloseButton {
+    cursor: pointer;
+  }
+  
+  #modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    float:left;
+  }
+  
+  #modalContent {
+    position: absolute;
+    background-color: #ffffff;
+    width: 80%;
+    height: 80%;
+    padding: 15px;
+  }
+  
+  #modalContainer.hidden {
+    display: none;
+  }
